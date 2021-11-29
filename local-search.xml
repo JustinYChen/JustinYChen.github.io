@@ -5,8 +5,8 @@
   
   <entry>
     <title>Dynamic Memory Allocation</title>
-    <link href="/2021/11/23/Dynamic-Memory-Allocation/"/>
-    <url>/2021/11/23/Dynamic-Memory-Allocation/</url>
+    <link href="/2021/11/23/Algorithms02/"/>
+    <url>/2021/11/23/Algorithms02/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="动态内存规划"><a href="#动态内存规划" class="headerlink" title="动态内存规划"></a>动态内存规划</h1><h2 id="地址和指针"><a href="#地址和指针" class="headerlink" title="地址和指针"></a>地址和指针</h2><p><img src="Address.png" alt="Address"></p><ol><li><p>C语言库中的相关函数<br>在stdlib.h头文件中<br>void *malloc(size_t size)</p><h3 id="size-t"><a href="#size-t" class="headerlink" title="size_t"></a>size_t</h3><ol><li>是 an unsigned integer type, </li><li>是sizeof运算的返回值</li><li>在stdlib中广泛用于表示大小</li></ol><p>创建一个大小为size的内存地址，返回指向新开辟内存的地址，如果失败返回NULL</p><p>void *calloc(size_t nobj, size_t size）：基本与malloc相同，但有更多用法，会自动初始化为0</p><p>void *realloc(void *p, size_t size)：重新规划已经存在的内存地址的大小</p><p>void free(void *p)：释放内存，有开辟就要有释放，一一对应</p></li><li><p>总结<br><img src="Summary.png" alt="总结"></p></li></ol>]]></content>
     
